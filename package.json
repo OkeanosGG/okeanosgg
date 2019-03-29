@@ -1,0 +1,17 @@
+{
+  "name": "okeanosgg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "author": "Okeanos",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "discord.js": "^11.4.2",
+    "moment": "^2.24.0",
+    "token": "^0.1.0"
+  }
+}
