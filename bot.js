@@ -97,6 +97,9 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'whitemocha') {
     msg.channel.sendMessage('**Afiyet Olsun!** https://gph.is/g/Zy52neZ');
   }
+  if (msg.content.toLowerCase() === 'soğuksuiç') {
+    msg.channel.sendMessage('**Afiyet Olsun!** https://gph.is/g/EGk9PlE');
+  }
   if (msg.content.toLowerCase() === 'highliôre') {
     msg.channel.sendMessage('**Medeniyet, insan olmak ile alakalıdır. Öldürmek ise insani bir dürtü** ```-Highliôre``` https://gph.is/g/E1Redqa');
   }
