@@ -23,6 +23,6 @@ module.exports = client => {
 
         var random = Math.floor(Math.random()*(oyun.length-0+1)+0);
 
-        client.user.setGame(oyun[random], "https://www.twitch.tv/emirhansaracyt");
+        client.user.setGame(oyun[random], "");
         }, 2 * 2500);
 }
