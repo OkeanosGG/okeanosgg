@@ -210,7 +210,7 @@ client.on('message', async message => {
               deny: ['CONNECT']
             }])
             .then(channel => channel.setParent(message.guild.channels.find(channel => channel.name === "Bot Kullanımı")));
-            message.guild.createChannel('Yapımcım: Emirhan Saraç', 'voice', [{
+            message.guild.createChannel('Yapımcım: Okeanos', 'voice', [{
               id: message.guild.id,
               deny: ['CONNECT']
             }])
