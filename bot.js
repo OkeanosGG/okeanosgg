@@ -190,6 +190,32 @@ client.on("message", message => {
     }
 });
 
+client.on("message", async (message) => {
+    if (message.author.bot) return;
+    if (!message.content.startsWith(prefix)) return;
+    
+    let command = message.content.split(" ")[0];
+    command = command.slice(prefix.length);
+    
+    let args = message.content.split(" ").slice(1);
+      
+  
+   if (command === "duyuru") {
+       if (message.member.hasPermission("ADMINISTRATOR")) {
+           const color = args[0]
+           const text = args.slice(1).join(" ");
+           if (text.length < 1) return message.channel.send("?duyuru #kanal Deneme");
+ //const colour = args.slice(2).join("");
+           const embed = new Discord.RichEmbed()
+           .setColor("0x" + color)
+           .setTitle("DUYURU")
+           .setDescription(text);
+           message.channel.send("@everyone")
+           message.channel.send({embed})
+       }
+   };
+});
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
