@@ -18,6 +18,6 @@ exports.conf = {
 
 exports.help = {
   name: 'atamınsözleri',
-  description: '',
+  description: 'Rastgele Mustafa Kemal Atatürk ün Sözlerinden Yazar',
   usage: 'mkemal!atamınsözleri'
 };
