@@ -115,32 +115,6 @@ if (msg.content.toLowerCase() === prefix + 'benimleevlenirmisineren' ) { msg.cha
 
 });
 
-const invites = {};
-const wait = require('util').promisify(setTimeout);
-
-client.on('ready', () => {
-  wait(1000);
-
-  client.guilds.forEach(g => {
-    g.fetchInvites().then(guildInvites => {
-      invites[g.id] = guildInvites;
-    });
-  });
-});
-
-const invites = {};
-const wait = require('util').promisify(setTimeout);
-
-client.on('ready', () => {
-  wait(1000);
-
-  client.guilds.forEach(g => {
-    g.fetchInvites().then(guildInvites => {
-      invites[g.id] = guildInvites;
-    });
-  });
-});
-
 client.on('message', async message => {
   const ms = require('ms');
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
