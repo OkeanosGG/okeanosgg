@@ -97,6 +97,9 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'whitemocha') {
     msg.channel.sendMessage('**Afiyet Olsun!** https://gph.is/g/Zy52neZ');
   }
+  if (msg.content.toLowerCase() === 'orospuselin') {
+    msg.channel.sendMessage('https://gph.is/g/4LPkLR4');
+  }
   if (msg.content.toLowerCase() === 'soğuksuiç') {
     msg.channel.sendMessage('**Afiyet Olsun!** https://gph.is/g/EGk9PlE');
   }
