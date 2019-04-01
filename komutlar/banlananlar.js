@@ -30,7 +30,7 @@ module.exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: ["banlılar","banliste"],
-  permLevel: 0
+  permLevel: 2
 };
 module.exports.help = {
   name: 'banlananlar',
