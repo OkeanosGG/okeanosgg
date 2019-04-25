@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
   
   
    const embed = new Discord.RichEmbed()
-     .setDescription(`Herkese ${rol} adlı rol verildi!`)
+     .setDescription(**Herkese ${rol} adlı rol verildi!**)
         .setColor(rol.hexColor)
    
    message.guild.members.forEach(u => {
