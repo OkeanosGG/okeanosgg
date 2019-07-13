@@ -1,4 +1,4 @@
-```const Discord = require('discord.js');
+const Discord = require('discord.js');
 exports.run = (client, message, args) => {
   if (message.author.id != "463419656661762048") return message.reply('Bunu Sadece Sahibim Kullanabilir');
       
@@ -18,7 +18,6 @@ exports.run = (client, message, args) => {
   message.reply('Mesajını Gönderdim.')
   const embed = new Discord.RichEmbed()
   .setColor('RANDOM')
-  .setTitle(`**Sahibimden Bir Mesajın Var**`)
   .setTimestamp()
   .setDescription(reason);
   return user.send(embed);
@@ -35,4 +34,4 @@ exports.help = {
   name: 'mesajat',
   description: 'Bir kullanÄ±cÄ±ya Ã¶zel mesaj yollar.',
   usage: 'mesajat'
-};```
+};
