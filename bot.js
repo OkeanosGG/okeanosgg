@@ -68,6 +68,12 @@ client.load = command => {
   });
 };
 
+client.on('message', async msg => {
+  if (msg.content.toLowerCase() === '<@402222633892184065>') {
+    msg.reply("`Sahibimi Etiketlemezsen Daha Güzel Olacak 😊 `")
+  }  
+});
+
 client.unload = command => {
   return new Promise((resolve, reject) => {
     try {
