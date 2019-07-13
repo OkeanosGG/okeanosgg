@@ -21,7 +21,6 @@ exports.run = async(client, message, args) => {
     let rol = message.mentions.roles.first() || message.guild.roles.get(args[0]) || message.guild.roles.find(rol => rol.id === args[0]);
     if (!args[0]) {
         var embed = new RichEmbed()
-          .setDescription(`Doğru kullanım: prefixin!rol-bilgi [@rol]`)
           .setColor(client.ayarlar.renk)
           .setTimestamp()
         var embed = new RichEmbed()
