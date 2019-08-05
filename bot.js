@@ -103,7 +103,7 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'selam') {
     msg.channel.sendMessage('Aleyküm Selam Bro!');
   }
-  if (msg.content.toLowerCase() === 'emir') {
+  if (msg.content.toLowerCase() === 'eklenecek') {
     msg.channel.sendMessage('**Başarılarını gizlemek, en büyük başarıdır.** ```-Emir```https://gph.is/g/Zxd0V6Z');
   }
   if (msg.content.toLowerCase() === 'whitemocha') {
@@ -112,8 +112,8 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'soğuksuiç') {
     msg.channel.sendMessage('**Afiyet Olsun!** https://gph.is/g/EGk9PlE');
   }
-  if (msg.content.toLowerCase() === 'highliôre') {
-    msg.channel.sendMessage('**Medeniyet, insan olmak ile alakalıdır. Öldürmek ise insani bir dürtü** ```-Highliôre``` https://gph.is/g/E1Redqa');
+  if (msg.content.toLowerCase() === 'eklenecek') {
+    msg.channel.sendMessage('eklenecek');
   }
 if (!msg.content.startsWith(prefix)) {
  return;
@@ -122,7 +122,7 @@ if (msg.content.toLowerCase() === prefix + 'nasılsın' ) { msg.channel.sendMess
 }
 if (msg.content.toLowerCase() === prefix + 'çayiç' ) { msg.channel.sendMessage('https://gph.is/g/aR957OE')
 }
-if (msg.content.toLowerCase() === prefix + 'benimleevlenirmisineren' ) { msg.channel.sendMessage('https://gph.is/g/ajbGQpa')
+if (msg.content.toLowerCase() === prefix + 'eklenecek' ) { msg.channel.sendMessage('https://gph.is/g/ajbGQpa')
 }
 
 });
@@ -151,6 +151,13 @@ client.on("message", async (message) => {
            message.channel.send({embed})
        }
    };
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'okeanos1379hazretleri') {  // İstediğiniz Komut
+       msg.member.addRole("607844762107772928") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
+    msg.reply('Rolünü Verdim Artık Beni Kullanabilirsin.'); //Komutu Yazınca cevap ne yazsın?
+  }
 });
 
 client.elevation = message => {
