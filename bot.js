@@ -48,9 +48,9 @@ client.reload = command => {
 };
 
 client.on('guildBanAdd' , (guild, user) => {
-  let hosgeldingörüşürüz = guild.channels.find('name', 'hosgeldin-görüşürüz');
-  if (!hosgeldingörüşürüz) return;
-  hosgeldingörüşürüz.send('https://media.giphy.com/media/8njotXALXXNrW/giphy.gif **Adalet dağıtma zamanı gelmiş!** '+ user.username +'**Bakıyorum da suç işlemiş,Yargı dağıtmaya devam** :fist: :writing_hand:  :spy:' );
+  let gelengiden = guild.channels.find('name', 'gelen-giden');
+  if (!gelengiden) return;
+  gelengiden.send('https://media.giphy.com/media/8njotXALXXNrW/giphy.gif **Adalet dağıtma zamanı gelmiş!** '+ user.username +'**Bakıyorum da suç işlemiş,Yargı dağıtmaya devam** :fist: :writing_hand:  :spy:' );
 });
 
 client.load = command => {
@@ -151,13 +151,6 @@ client.on("message", async (message) => {
            message.channel.send({embed})
        }
    };
-});
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'okeanos1379hazretleri') {  // İstediğiniz Komut
-       msg.member.addRole("607844762107772928") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-    msg.reply('Rolünü Verdim Artık Beni Kullanabilirsin.'); //Komutu Yazınca cevap ne yazsın?
-  }
 });
 
 client.elevation = message => {
