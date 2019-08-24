@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const db = require('quick.db')
 
 exports.run = async (client, message, args) => {
   var bot = "512292345140609024"
