@@ -68,6 +68,32 @@ client.load = command => {
   });
 };
 
+```client.on('guildMemberAdd', (member) => {
+    const guild = member.guild;
+
+
+ let sChannel = member.guild.channels.find(c => c.name === 'bot-koruma')
+
+    if(member.user.bot !==true){
+
+    } 
+    else {
+
+    sChannel.send(`**Økeânøs Koruma Sistemi**
+Sunucuya Bir Bot Eklendi Ve Güvenlik Nedeniyle Banlandı
+Banlanan Bot: **${member.user.tag}**
+@here`)
+    .then(() => console.log(`yasaklandı ${member.displayName}`))
+    .catch(console.error);
+       member.ban(member) 
+  }  
+  });```
+
+
+Komutun Yapımcısı <@!624720793095372807> 
+Komut Main Dosyanıza(app.js/bot.js/index.js/sever.js) koyunuz
+sunucunuzda "bot-koruma" isimli bir kanal açmayı unutmayınız.
+
 client.unload = command => {
   return new Promise((resolve, reject) => {
     try {
