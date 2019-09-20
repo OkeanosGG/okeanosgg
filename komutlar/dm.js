@@ -1,4 +1,4 @@
-```js
+js
 const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
@@ -34,4 +34,4 @@ exports.help = {
   name: 'dm',
   description: 'dm mesajı atar.',
   usage: '?duyuru'
-};```
+};
