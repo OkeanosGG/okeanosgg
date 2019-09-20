@@ -68,48 +68,6 @@ client.load = command => {
   });
 };
 
-```client.on('guildMemberAdd', (member) => {
-    const guild = member.guild;
-
-
- let sChannel = member.guild.channels.find(c => c.name === 'bot-koruma')
-
-    if(member.user.bot !==true){
-
-    } 
-    else {
-
-    sChannel.send(`**Økeânøs Koruma Sistemi**
-Sunucuya Bir Bot Eklendi Ve Güvenlik Nedeniyle Banlandı
-Banlanan Bot: **${member.user.tag}**
-@here`)
-    .then(() => console.log(`yasaklandı ${member.displayName}`))
-    .catch(console.error);
-       member.ban(member) 
-  }  
-  });```
-
-
-Komutun Yapımcısı <@!624720793095372807> 
-Komut Main Dosyanıza(app.js/bot.js/index.js/sever.js) koyunuz
-sunucunuzda "bot-koruma" isimli bir kanal açmayı unutmayınız.
-
-client.unload = command => {
-  return new Promise((resolve, reject) => {
-    try {
-      delete require.cache[require.resolve(`./komutlar/${command}`)];
-      let cmd = require(`./komutlar/${command}`);
-      client.commands.delete(command);
-      client.aliases.forEach((cmd, alias) => {
-        if (cmd === command) client.aliases.delete(alias);
-      });
-      resolve();
-    } catch (e){
-      reject(e);
-    }
-  });
-};
-
 client.on("message", message => {
     const dmchannel = client.channels.find("name", "dm-log");
     if (message.channel.type === "dm") {
